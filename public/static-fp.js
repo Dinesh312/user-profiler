@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 	const appCodeName = navigator.appCodeName;
 	const appName = navigator.appName;
-	const languages = navigator.languages
+	const languages = navigator.language
 	const cookieEnabled = navigator.cookieEnabled;
 	const deviceMemory = navigator.deviceMemory;
 	const doNotTrack = navigator.doNotTrack;

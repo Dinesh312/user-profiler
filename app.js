@@ -76,10 +76,9 @@ app.post('/', (req, res) =>{
 				}
 			});
 			// console.log(browserFp);
-
-			deviceHash = hashGenerator(req.body.href, deviceFp, req.get('X-df-timestamp'), req.get('X-df-uuid'))
+			deviceHash = hashGenerator(req.body.href, deviceFp, req.get('X-df-timestamp'), req.body.platform);
 			browserHash = hashGenerator(req.body.href, browserFp, req.get('X-df-timestamp'), req.get('X-df-uuid'))
-			// console.log(deviceHash + "\n" + browserHash);
+			console.log(deviceHash + "\n" + browserHash);
 		})
 	}
 
@@ -152,11 +151,11 @@ app.post('/', (req, res) =>{
 	}	
 })
 
-function hashGenerator(href, json, timestamp, uuid){
+function hashGenerator(href, json, timestamp, key){
 	delete json.date
 	// console.log(json)
-	var temp = href + "\n" + JSON.stringify(json) + "\n" + uuid
-	hash = base64.stringify(hmac(temp, base64.stringify(utf8.parse(uuid))))
+	var temp = href + "\n" + JSON.stringify(json) + "\n" + key
+	hash = base64.stringify(hmac(temp, base64.stringify(utf8.parse(key))))
 	return hash
 }
 
