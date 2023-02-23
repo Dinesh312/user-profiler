@@ -1,0 +1,154 @@
+<head>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Riddle</title>
+  <script src="dynamic-fp.js"></script>
+  <style>
+  	h5 {
+  margin:100px auto;
+  width:20vw;
+  text-align:center;
+  font-family: Ubuntu;
+  font-weight:700;
+  font-size:5em;
+}
+
+input[type=text] {
+  border: none;
+  border-bottom: 2px solid red;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  opacity: 0.2;
+}
+
+button {
+	text-align : center;
+	background-color: white;
+	border: 1px solid #777;
+	border-radius: 2px;
+	font-family: Ubuntu;
+	font-size: 21px;
+	display: block;
+	width: 25%;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+p {
+  margin:auto;
+  width:60vw;
+  text-align:justify;
+  font-family:Ubuntu;
+  line-height:1.5;
+  font-size:2em;
+}
+body {
+            background-color: #fcfafa;
+            font-family: Ubuntu;
+            text-align: center;
+        }
+  </style
+</head>
+
+<body>
+  <h5 data-aos="slide-up">Scroll Down to see the riddles</h5>
+ <br> <br> <br> <br> <br>
+  <p data-aos="fade-up">The more you take, the more you leave behind. What am I? </p>
+  <br>
+  <p data-aos="slide-right" ><label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed1">Footsteps</input>
+			</label>
+			<br>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed1">Money</input>
+			</label>
+			<br>
+			<label for="recommed-3">
+				<input type="radio"
+					id="recommed-3"
+					name="recommed1">Time</input>
+			</label>
+			<br>
+			<label for="recommed-4">
+				<input type="radio"
+					id="recommed-4"
+					name="recommed1">Knowledge</input>
+			</label>
+  </p>
+  <br>
+  
+  <p data-aos="fade-up">I am a 7 letter word. I become longer when t=my third letter is removed. Who am I ?</p>
+  <br>
+  <p data-aos="slide-left" ><label for="recommed-5">
+				<input type="radio"
+					id="recommed-5"
+					name="recommed2">Longing</input>
+			</label>
+			<br>
+			<label for="recommed-6">
+				<input type="radio"
+					id="recommed-6"
+					name="recommed2">Lounger</input>
+			</label>
+			<br>
+			<label for="recommed-7">
+				<input type="radio"
+					id="recommed-7"
+					name="recommed2">Lengthy</input>
+			</label>
+			<br>
+			<label for="recommed-8">
+				<input type="radio"
+					id="recommed-8"
+					name="recommed2">Longine</input>
+			</label>
+  </p>
+  <br>
+  <p data-aos="fade-up"> I can be cracked, made, told, and played. What am I?</p>
+  <br>
+  <p data-aos="slide-right" ><label for="recommed-9">
+				<input type="radio"
+					id="recommed-9"
+					name="recommed3">A joke</input>
+			</label>
+			<br>
+			<label for="recommed-10">
+				<input type="radio"
+					id="recommed-10"
+					name="recommed3">A song</input>
+			</label>
+			<br>
+			<label for="recommed-11">
+				<input type="radio"
+					id="recommed-11"
+					name="recommed3">A game</input>
+			</label>
+			<br>
+			<label for="recommed-12">
+				<input type="radio"
+					id="recommed-12"
+					name="recommed3">A story</input>
+			</label>
+  </p>
+  <br>
+  <p data-aos="fade-up">What is the value of x in the equation 2x + 4 = 10?</p>
+  <br>
+  <p data-aos="slide-left" ><input type="text"
+                   id="riddle"
+                   placeholder="Enter your answer" /></p>
+  <br>
+  <div data-aos="slide-right" align="center" ><button type="button" onclick="location.href = '/'" id="submit" value="submit">
+			Submit
+		</button></div>
+  <br><br><br><br><br><br>
+  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init({
+  easing: 'ease-in-quad'});
+</script>
+</body>

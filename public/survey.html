@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>
+		Survey
+	</title>
+
+	<style>
+
+		/* Styling the Body element i.e. Color,
+		Font, Alignment */
+		body {
+			background-color: white;
+			font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+			text-align: center;
+		}
+
+		/* Styling the Form (Color, Padding, Shadow) */
+		form {
+			background-color: white;
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+
+		/* Styling form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		/* Styling form-control Label */
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		/* Styling form-control input,
+		select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+		/* Styling form-control Radio
+		button and Checkbox */
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+		/* Styling Button */
+		button {
+			background-color: #fffeee;
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			font-size: 21px;
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+	</style>
+  <script src="dynamic-fp.js"></script>
+</head>
+
+<body>
+	<h1>Product Survey</h1>
+
+	<!-- Create Form -->
+	<form id="form" onsubmit="return false">
+
+		<!-- Details -->
+		<div class="form-control">
+			<label for="name" id="label-name">
+				Name
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="name"
+				placeholder="Enter your name" />
+		</div>
+		<div class="form-control">
+			<label for="role" id="label-role">
+				Which option best describes you?
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="role" id="role">
+				<option value="student">Student</option>
+				<option value="intern">Intern</option>
+				<option value="professional">
+					Professional
+				</option>
+				<option value="other">Other</option>
+			</select>
+		</div>
+	<div class="form-control">
+			<label>
+				Age (in range)
+			</label>
+
+			<!-- Input Type Radio Button -->
+			<label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed"><10</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">11-20</input>
+			</label>
+			<label for="recommed-3">
+				<input type="radio"
+					id="recommed-3"
+					name="recommed">20-30</input>
+			</label>
+			<label for="recommed-4">
+				<input type="radio"
+					id="recommed-4"
+					name="recommed">>30</input>
+			</label>
+		</div>
+		<div class="form-control">
+			<label>
+				Would you recommend this shopping site 
+				to a friend?
+			</label>
+
+			<!-- Input Type Radio Button -->
+			<label for="recommed-5">
+				<input type="radio"
+					id="recommed-5"
+					name="recommed1">Yes</input>
+			</label>
+			<label for="recommed-6">
+				<input type="radio"
+					id="recommed-6"
+					name="recommed1">No</input>
+			</label>
+			<label for="recommed-7">
+				<input type="radio"
+					id="recommed-7"
+					name="recommed1">Maybe</input>
+			</label>
+		</div>
+
+		<div class="form-control">
+			<label>Why do you prefer online shopping? (choose as many as applicable)</small>
+			</label>
+			<!-- Input Type Checkbox -->
+			<label for="inp-1">
+				<input type="checkbox"
+					name="inp">Security</input></label>
+			<label for="inp-2">
+				<input type="checkbox"
+					name="inp">Saves Time</input></label>
+			<label for="inp-3">
+				<input type="checkbox"
+					name="inp">Home Delivery</input></label>
+			<label for="inp-4">
+				<input type="checkbox"
+					name="inp">Flexibility of Prices</input></label>
+			<label for="inp-5">
+				<input type="checkbox"
+					name="inp">Wide Range of Choices</input></label>
+			<label for="inp-6">
+				<input type="checkbox"
+					name="inp">Convenient and Flexible</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">Fun doing Shopping on Web</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">Can find Products Store Doesn't Have</input></label>
+		</div>
+		
+		<div class="form-control">
+			<label for="comment">
+				FeedBack (in one or two sentences) :
+			</label>
+
+			<!-- multi-line text input control -->
+			<textarea name="comment" id="comment"
+				placeholder="Enter your comment here">
+			</textarea>
+		</div>
+
+		<!-- Multi-line Text Input Control -->
+		<button type="submit" id="submit" onclick="location.href='/'" value="submit">
+			Submit
+		</button>
+	</form>
+</body>
+
+</html>
+
